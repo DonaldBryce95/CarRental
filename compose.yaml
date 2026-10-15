@@ -1,0 +1,67 @@
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Developer
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD:?Set MSSQL_SA_PASSWORD in your local .env file}
+    ports:
+      - "127.0.0.1:14330:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    networks:
+      - rental-network
+    healthcheck:
+      test:
+        - CMD
+        - /opt/mssql-tools18/bin/sqlcmd
+        - -S
+        - localhost
+        - -U
+        - sa
+        - -P
+        - ${MSSQL_SA_PASSWORD}
+        - -C
+        - -Q
+        - SELECT 1
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 30s
+
+  api:
+    image: zaprental-api:local
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ConnectionStrings__DefaultConnection: "Server=db,1433;Database=CarRentalDb;User Id=sa;Password=${MSSQL_SA_PASSWORD};Encrypt=True;TrustServerCertificate=True"
+      Jwt__Key: ${JWT_KEY:?Set JWT_KEY in your local .env file}
+      Jwt__Issuer: ${JWT_ISSUER:-ZapRental}
+      Jwt__Audience: ${JWT_AUDIENCE:-ZapRental}
+      SeedAdmin__Email: ${SEED_ADMIN_EMAIL:?Set SEED_ADMIN_EMAIL in your local .env file}
+      SeedAdmin__Password: ${SEED_ADMIN_PASSWORD:?Set SEED_ADMIN_PASSWORD in your local .env file}
+    ports:
+      - "5028:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - rental-network
+
+  frontend:
+    build:
+      context: ./car-rental-client
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80"
+    depends_on:
+      - api
+    networks:
+      - rental-network
+
+volumes:
+  sqlserver_data:
+
+networks:
+  rental-network:
+    driver: bridge

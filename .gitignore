@@ -1,0 +1,39 @@
+.NET build outputs
+
+**/bin/
+**/obj/
+
+Visual Studio
+
+.vs/
+*.user
+*.suo
+
+Local environment configuration
+
+.env
+.env.*
+!.env.example
+
+Local development settings
+
+appsettings.Development.json
+
+Frontend dependencies and build output
+
+**/node_modules/
+**/dist/
+
+Logs
+
+*.log
+
+# Local database files and backups
+*.mdf
+*.ldf
+*.bak
+
+# Local secret and certificate files
+secrets.json
+*.pfx
+*.key

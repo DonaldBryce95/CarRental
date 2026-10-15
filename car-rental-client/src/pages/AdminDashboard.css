@@ -1,0 +1,80 @@
+.dashboard-container {
+  padding: 40px;
+}
+
+.dashboard-container h1 {
+  margin-bottom: 75px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.dashboard-card {
+  width: 330px;
+  min-height: 170px;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+.card-count {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: black;
+}
+
+.card-link {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+}
+
+.assign-button {
+  margin-right: auto;
+  margin-left: 40px;
+  padding: 11px 18px;
+  margin-top: 5px;
+  width: 200px;
+  margin-bottom: 35px;
+  border: none;
+  border-radius: 6px;
+  background: black;
+  color: #FFD600;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dashboard-card,
+.dashboard-card:link,
+.dashboard-card:visited,
+.dashboard-card:hover,
+.dashboard-card:active {
+  color: black;
+  text-decoration: none;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.dashboard-card .card-title,
+.dashboard-card .card-count,
+.dashboard-card .card-link {
+  color: black;
+  text-decoration: none;
+}

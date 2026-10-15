@@ -1,0 +1,42 @@
+.maintenance-dashboard-container {
+  padding: 40px;
+}
+
+.maintenance-dashboard-container h1 {
+  margin-bottom: 75px;
+}
+
+.maintenance-dashboard-cards {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.maintenance-dashboard-card {
+  width: 280px;
+  min-height: 170px;
+  padding: 25px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+.maintenance-card-count {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: black;
+}
+
+.maintenance-card-link {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: black;
+}

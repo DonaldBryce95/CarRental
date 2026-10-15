@@ -1,0 +1,281 @@
+.searchbar-container {
+  display: flex;
+  height: 110px;
+  background-color: #FFD45A;
+  padding: 20px;
+  padding-left: 40px;
+  gap: 20px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.searchbar-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 17px;
+  width: 100%;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 50px;
+  background-color: white;
+  border-radius: 6px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.search-input i {
+  order: 2;
+  margin-left: 10px;
+}
+
+.pickup-container {
+  width: 500px;
+}
+
+.pickup-container .search-input {
+  width: 100%;
+}
+
+.searchbar-container > .search-input {
+  width: 160px;
+}
+
+.branch-dropdown {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.branch-option {
+  padding: 16px 18px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.branch-option:hover {
+  background-color: #f5f5f5;
+}
+
+.branch-option i {
+  font-size: 14px;
+}
+
+.branch-dropdown p {
+  margin: 0;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.branch-dropdown p:hover {
+  background-color: #f2f2f2;
+}
+
+.pickup-container {
+  position: relative;
+}
+
+.branch-selection {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  z-index: 10;
+}
+
+.branch-dropdown {
+  position: relative;
+  top: -4px;
+  width: 300px;
+}
+
+.branch-option {
+  padding: 16px 18px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.branch-option:hover {
+  background-color: #f5f5f5;
+}
+
+.branch-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branch-name i {
+  font-size: 14px;
+}
+
+.branch-info {
+  position: absolute;
+  left: 302px;
+  top: -4px;
+  width: 260px;
+  min-height: 150px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.branch-info h3 {
+  margin-top: 0;
+}
+
+.branch-info p {
+  margin: 8px 0;
+}
+
+.search-button {
+  height: 50px;
+  padding: 0 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: #FFC72C;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.return-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px 40px;
+  background-color: #FFD45A;
+  align-items: center;
+  position: relative;
+}
+
+.return-container .search-input:first-child {
+  width: 500px;
+}
+
+.return-container .search-input {
+  width: 160px;
+}
+
+.return-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 17px;
+  width: 100%;
+}
+
+.return-container {
+  position: relative;
+}
+
+body {
+  background-color: white;
+}
+
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.fleet-section {
+  margin-top: auto;
+  width: 100%;
+  padding: 40px 0;
+  background-color: white;
+  background-color: transparent;
+}
+
+.fleet-section h2 {
+  text-align: center;
+  margin: 0 0 30px;
+  color: black;
+  font-size: 32px;
+}
+
+.fleet-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.fleet-container {
+  display: flex;
+  gap: 30px;
+}
+
+.fleet-card {
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.fleet-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+}
+
+.fleet-arrow {
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: #FFC72C;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.fleet-arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.fleet-card h3 {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+.fleet-card p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.home-page {
+  min-height: 100vh;
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.validation-error {
+  position: absolute;
+  bottom: 100%;
+  left: 2px;
+  color: #d32f2f;
+  font-size: 13px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+}

@@ -1,0 +1,75 @@
+.maintenance-worker-task-page {
+  margin-top: 40px;
+  transform: translateX(-16px);
+}
+
+.worker-task-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.worker-task-card {
+  width: 340px;
+  height: 400px;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 40px;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.worker-task-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.task-back-to-dash {
+  margin-right: auto;
+  padding: 11px 18px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 6px;
+  background: black;
+  color: #FFD600;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-report {
+  margin-left: 50px;
+  padding: 11px 18px;
+  margin-top: 25px;
+  border: none;
+  width: 200px;
+  border-radius: 6px;
+  background: #FFD600;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+a.worker-card,
+a.worker-card:link,
+a.worker-card:visited,
+a.worker-card:hover,
+a.worker-card:active,
+a.worker-card:focus {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+a.worker-card p {
+  color: #000 !important;
+  text-decoration: none !important;
+}

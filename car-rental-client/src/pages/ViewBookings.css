@@ -1,0 +1,290 @@
+.booking-page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.booking-summary-container {
+  width: 350px;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Progress */
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.dot.active {
+  background-color: #FFC72C;
+}
+
+.booking-progress {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+}
+
+.progress-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.progress-step p {
+  margin: 8px 0 0;
+  font-size: 14px;
+}
+
+.progress-step.completed .progress-dot,
+.progress-step.active .progress-dot {
+  background-color: #FFC72C;
+  color: #222;
+}
+
+.progress-step.active p {
+  font-weight: bold;
+}
+
+.progress-line {
+  width: 100px;
+  height: 3px;
+  background-color: #ddd;
+  margin-top: 15px;
+}
+
+.test-title {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1px;
+  background-color: #FFC72C;
+  border-radius: 10px 10px 0 0;
+}
+
+.test-title h1 {
+  margin: 0;
+  font-size: 24px;
+  height: 50px;
+  padding-top: 10px;
+}
+
+.booking-pickup,
+.booking-return,
+.car-info-heading,
+.pricing {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Pick Up */
+
+.booking-pickup {
+  position: relative;
+}
+
+.booking-pickup h1 {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 20px;
+  color: #FFC72C;
+}
+
+.pickup-data {
+  margin-top: 10px;
+}
+
+.pickup-data p:first-child {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+}
+
+.pickup-branch {
+  margin: 5px 0 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.booking-pickup::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #FFC72C;
+  margin-top: 20px;
+}
+
+.booking-return {
+  position: relative;
+}
+
+.booking-return h1 {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 20px;
+  color: #FFC72C;
+}
+
+.return-data {
+  margin-top: 10px;
+}
+
+.return-data p:first-child {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+}
+
+.return-branch {
+  margin: 5px 0 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.booking-return::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #FFC72C;
+  margin-top: 20px;
+}
+
+/* Group */
+
+.car-info-heading {
+  position: relative;
+}
+
+.car-info-heading h1 {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 20px;
+  color: #FFC72C;
+}
+
+.type-info {
+  margin-top: 10px;
+}
+
+.type-info p:first-child {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+}
+
+.type-info .car-info {
+  margin: 5px 0 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.car-info-heading::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #FFC72C;
+  margin-top: 20px;
+}
+
+.pricing {
+  margin-top: 15px;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+.pricing h1 {
+  margin: 0;
+  padding-top: 10px;
+  font-size: 20px;
+  color: #FFC72C;
+}
+
+.pricing p {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.pricing-total {
+  width: calc(100% + 50px);
+  margin-left: -25px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #FFC72C;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.pricing-total h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: black;
+}
+
+.pricing-total p {
+  margin: 5px 0 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+}
+
+.continue-button {
+  width: 350px;
+  padding: 12px;
+  background-color: #FFC72C;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+
+  position: absolute;
+  right: 420px;
+  bottom: 0;
+}
+
+.welcome-message {
+  position: relative;
+  left: -200px;
+  margin: 20px 0;
+}
+
+.welcome-message p:first-child {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.welcome-message p:last-child {
+  font-size: 15px;
+  margin-top: 8px;
+}

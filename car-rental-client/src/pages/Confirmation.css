@@ -1,0 +1,36 @@
+.reservation-container {
+  width: 750px;
+  margin: 40px auto;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  color: black;
+}
+.reservation-container h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: black;
+  border-bottom: 4px solid #FFC72C;
+  padding-bottom: 15px;
+  padding-bottom: 30px;
+}
+.reservation-detail {
+  padding: 12px 10px;
+  margin: 0;
+  border-bottom: 2px solid #FFC72C;
+  color: black;
+}
+.home-button {
+  display: block;
+  width: 250px;
+  margin: 30px auto 0;
+  padding: 12px;
+  background-color: #FFC72C;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}

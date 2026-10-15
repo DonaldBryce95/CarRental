@@ -1,0 +1,75 @@
+.assign-role-page {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.assign-card {
+  width: 420px;
+  padding: 35px;
+  margin-top: 60px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.assign-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.assign-card h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+.assign-card label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.assign-card select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.assign-card button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #FFD600;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.assign-card button:hover {
+  background-color: #FFC72C;
+}
+
+.assign-back-to-dash {
+  margin-right: auto;
+  padding: 11px 18px;
+  margin-top: 30px;
+  border: none;
+  margin-left: 40px;
+  border-radius: 6px;
+  background: #FFD600;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,45 @@
+.reservations-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.reservation-page {
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  overflow-x: auto;
+}
+
+.reservation-page table {
+  width: 100%;
+  border-collapse: collapse;
+  color: black;
+}
+
+.reservation-page th {
+  text-align: left;
+  padding: 15px;
+  border-bottom: 2px solid #ddd;
+  font-size: 14px;
+}
+
+.reservation-page td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.reservation-page tbody tr:hover {
+  background-color: #f8f8f8;
+}
+
+.reservation-page th {
+  text-align: left;
+  padding: 15px;
+  padding-left: 50px;
+  border-bottom: 2px solid #ddd;
+  font-size: 14px;
+}

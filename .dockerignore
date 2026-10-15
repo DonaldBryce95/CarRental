@@ -1,0 +1,35 @@
+Git metadata
+
+.git/
+
+.NET build output
+
+**/bin/
+**/obj/
+
+Frontend dependencies and build output
+
+**/node_modules/
+**/dist/
+
+Local secrets and environment files
+
+.env
+.env.*
+!.env.example
+**/appsettings.Development.json
+**/secrets.json
+
+IDE files
+
+.vs/
+.vscode/
+
+**/*.pfx
+**/*.key
+**/*.pem
+**/*.crt
+
+**/*.mdf
+**/*.ldf
+**/*.bak
